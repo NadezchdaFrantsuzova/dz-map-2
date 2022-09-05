@@ -13,11 +13,7 @@ public class WordsChecker {
 
     public boolean hasWord(String o) {
         System.out.println("Есть ли в тексте слово " + o + "?");
-        if (word.contains(o) == true) {
-            System.out.println("- Да\n");
-        } else {
-            System.out.println(" - Нет\n");
-        }
+        System.out.println(word.contains(o) ? "- Да\n" : "- Нет\n");
         return word.contains(o);
     }
 }
